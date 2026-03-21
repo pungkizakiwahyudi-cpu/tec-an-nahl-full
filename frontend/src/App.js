@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "./components/ui/sonner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // ← tambahan
+import ScrollToTop from "./components/ScrollToTop";
+import WhatsAppButton from "./components/WhatsAppButton";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProgramsPage from "./pages/ProgramsPage";
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop /> {/* ← letakkan di sini, dalam BrowserRouter */}
+        <ScrollToTop />
         <Header />
         <main>
           <Routes>
@@ -29,6 +30,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
         <Toaster />
       </BrowserRouter>
     </div>
